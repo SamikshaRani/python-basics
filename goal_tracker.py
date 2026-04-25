@@ -19,7 +19,7 @@ while True:
     if choice == '1':
         goal = input("What is your goal for today? ")
         time_stamp = datetime.datetime.now().strftime("%Y-%m-%d , %H:%M")
-        entry = f"[{time_stamp}] {goal}"
+        entry = f"[{time_stamp}] ,{goal}"
 
         save_to_file(entry)
         print("Goal saved to my_goals.txt!")
