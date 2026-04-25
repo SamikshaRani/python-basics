@@ -1,4 +1,8 @@
-# Simple Task & Goal Tracker for CUET Prep
+# Project : CUET & Coding Goal Tracker
+# Author : Samiksha Rani 
+# Date ; April 25, 2026
+# Decription : A script to track study with file persistence.
+
 import datetime
 
 def save_to_file(goal_text):
