@@ -5,10 +5,12 @@
 
 import datetime
 
-def save_to_file(goal_text):
+def save_to_file(category, goal_text):
     # 'a' means Append - it adds to the file instead of overwriting it
+    now = datetime.datetime.now().strftime("%Y-%m-%d , %H:%M")
     with open("my_goals.txt","a") as file:
-        file.write(goal_text+"\n")
+        # This saves it with a Tag like [STUDY] or [CHORE]
+        file.write(f"[{now}] [{category.upper()}] {goal_text}\n")
 
 def show_menu():
     print("\n--- CUET & CODING GOAL TRACKER ---")
@@ -21,12 +23,13 @@ while True:
     choice = input("Enter choice(1-3): ")
 
     if choice == '1':
-        goal = input("What is your goal for today? ")
-        time_stamp = datetime.datetime.now().strftime("%Y-%m-%d , %H:%M")
-        entry = f"[{time_stamp}] ,{goal}"
+        print("Categories: 1. Study | 2. Personal")
+        cat_choice = input("Select category number: ")
+        cat_name = "STUDY" if cat_choice == '1' else "PERSONAL"
+        goal = input(f"Enter your {cat_name} goal: ")
 
-        save_to_file(entry)
-        print("Goal saved to my_goals.txt!")
+        save_to_file(cat_name, goal)
+        print("Goal saved successfully!")
 
     elif choice == '2':
         print("\n---Your Saved Goals ---")
