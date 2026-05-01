@@ -1,3 +1,4 @@
-[2026-04-23 , 19:49] Reading NCERT Textbooks
-[2026-04-25 , 12:18] ,Reviewing Physics and Maths problems 
+[2026-04-23 , 19:49] Reading NCERT Textbooks [COMPLETED]
+[2026-04-25 , 12:18] ,Reviewing Physics and Maths problems [COMPLETED]
 [2026-04-30 , 13:32] [STUDY] Practicing GAT Questions
+[2026-05-01 , 13:42] [PERSONAL] Complete a 15 minute 'No Peeking' typing session and push a README update
