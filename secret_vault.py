@@ -1,7 +1,8 @@
-# Project : Secret Message Vault 
-# Author : Samiksha Rani
-# Description : A privacy tool to encode and decode messages using a Caesar Cipher.
-
+"""
+SECRET VAULT V1.0
+Developed by: Samiksha Rani
+Description: A security utility that uses Caesar Cipher encryption to protect text data.
+"""
 def caesar_cipher(text, shift, mode):
     result = ""
     if mode == "decode":
@@ -20,7 +21,7 @@ def caesar_cipher(text, shift, mode):
 
 print("--- SECRET MESSAGE VAULT---")
 msg = input("Enter your message: ")
-key = int(input("Enter secret key(1-25) "))
+key = int(input("Enter secret key(1-25): "))
 action = input("Type 'encode' to hide or 'decode' to reveal: ").lower()
 
 print(f"\nResult: {caesar_cipher(msg, key, action)}")
